@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp-like Messenger Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <img src="back-arrow.png" alt="Back Arrow">
+                <img src="profile-picture.jpg" alt="Profile Picture">
+                <h2>User Name</h2>
+            </div>
+            <div class="header-right">
+                <img src="video-call.png" alt="Video Call">
+                <img src="voice-call.png" alt="Voice Call">
+                <img src="info.png" alt="Info">
+            </div>
+        </div>
+        <div class="chat-box">
+            <div class="message-page">
+                <div class="date-divider">Today</div>
+                <div class="incoming-message">
+                    <img src="profile-picture.jpg" alt="Profile Picture">
+                    <div class="message-content">
+                        <p>Hello, how are you?</p>
+                        <span>11:00</span>
+                    </div>
+                </div>
+                <div class="outgoing-message">
+                    <div class="message-content">
+                        <p>I'm fine, thanks!</p>
+                        <span>11:01</span>
+                    </div>
+                    <img src="profile-picture.jpg" alt="Profile Picture">
+                </div>
+                <!-- Add more messages here -->
+            </div>
+            <div class="message-bottom">
+                <div class="emoji-picker">
+                    <img src="emoji.png" alt="Emoji">
+                </div>
+                <input type="text" placeholder="Type a message...">
+                <button>Send</button>
+                <div class="mic-picker">
+                    <img src="mic.png" alt="Mic">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
