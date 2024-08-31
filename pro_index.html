@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="pro_styles.css">
+    <link rel="stylesheet" href="pro_style.css">
 </head>
 <body>
     <!-- Sidebar -->
     <aside class="sidebar">
         <div class="logo">
-            <img src="learn2earn-logo.png" alt="Learn2Earn">
+            <img src="Assets/learn2earn-logo.png" alt="Learn2Earn">
         </div>
         <nav class="sidebar-nav">
             <ul>
-                <li><a href="#" class="active"><i class="fa-solid fa-house"></i> Profile</a></li>
-                <li><a href="#"><i class="fa-solid fa-rocket"></i> My Dashboard</a></li>
+                <li><a href="#" class="active"><i class="fa-solid fa-house"></i>Home</a></li>
                 <li><a href="#"><i class="fa-solid fa-clipboard-list"></i>Messages</a></li>
                 <li><a href="#"><i class="fa-regular fa-lightbulb"></i> My Interests</a></li>
                 <li><a href="#"><i class="fa-solid fa-book"></i> My Learning</a></li>
@@ -33,61 +32,53 @@
                 <a href="#"><i class="fa-solid fa-compass"></i> Explore</a>
             </div>
             <div class="search">
-                <input type="text" placeholder="What do you want to learn?">
-                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-            <div class="language">
-                <select>
-                    <option value="en">EN</option>
-                    <option value="fr">FR</option>
-                    <!-- Add more languages as needed -->
-                </select>
+                <form action="search.html" method="get">
+                    <input type="text" placeholder="What do you want to learn?" name="search-query">
+                    <button class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
             </div>
             <div class="profile-icon">
-                <i class="fa-solid fa-bell"></i>
-                <img src="profile-pic.png" alt="Profile Picture">
+                    <i class="fa-solid fa-bell"></i>
+                <a href="pro_index.html">
+                    <img src="Assets/blank-profile-picture-973460_1280.png" alt="Profile Picture">
+                </a>
             </div>
         </header>
 
         <!-- Profile Section -->
-        <section class="profile-section">
-            <div class="profile-banner">
-                <img src="spiderman-banner.jpg" alt="Profile Banner">
-                <div class="profile-info">
-                    <img src="profile-pic.png" alt="Profile Picture" class="profile-pic">
-                    <div class="profile-details">
-                        <h2>Vidish Kumar</h2>
-                        <p><i class="fa-solid fa-envelope"></i> 0231csbs034@niet.co.in</p>
-                        <p><i class="fa-solid fa-phone"></i> +91-9654403155 <i class="fa-solid fa-check-circle"></i></p>
-                        <p><i class="fa-solid fa-building"></i> AKINSTCD0496</p>
-                    </div>
-                    <button class="edit-profile-btn"><i class="fa-solid fa-pen"></i> Edit Profile</button>
+        <!-- Profile Section -->
+<section class="profile-section">
+    <div class="profile-info">
+        <img src="Assets/blank-profile-picture-973460_1280.png" class="profile-pic">
+        <h2>Vidish Kumar</h2>
+        <p><i class="fa-solid fa-envelope"></i> 24ak2004@learn2e.co.in</p>
+        <p><i class="fa-solid fa-phone"></i> +91-9654403155 <i class="fa-solid fa-check-circle"></i></p>
+        <button class="edit-profile-btn"><i class="fa-solid fa-pen"></i> Edit Profile</button>
+    </div>
+    <div class="profile-stats">
+        <div class="learning-hours">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Learning Hours</h3>
+            <p>19h 13m this fiscal year</p>
+        </div>
+        <div class="badges">
+            <i class="fa-solid fa-award"></i>
+            <h3>Badges</h3>
+            <div class="badge-list">
+                <div class="badge">
+                    <img src="badge-ace.png" alt="Ace Badge">
+                    <p>Ace</p>
+                    <p>Awarded On: Aug 24, 2024</p>
                 </div>
+                <div class="badge">
+                    <img src="badge-next.png" alt="Next Badge">
+                    <p>Your next Badge</p>
+                </div>
+                <!-- Add more badges as needed -->
             </div>
-            <div class="profile-stats">
-                <div class="learning-hours">
-                    <i class="fa-solid fa-clock"></i>
-                    <h3>Learning Hours</h3>
-                    <p>19h 13m this fiscal year</p>
-                </div>
-                <div class="badges">
-                    <i class="fa-solid fa-award"></i>
-                    <h3>Badges</h3>
-                    <div class="badge-list">
-                        <div class="badge">
-                            <img src="badge-ace.png" alt="Ace Badge">
-                            <p>Ace</p>
-                            <p>Awarded On: Aug 24, 2024</p>
-                        </div>
-                        <div class="badge">
-                            <img src="badge-next.png" alt="Next Badge">
-                            <p>Your next Badge</p>
-                        </div>
-                        <!-- Add more badges as needed -->
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
+    </div>
+</section>
 
         <!-- Assigned Trainings and Interests -->
         <div class="extra-info">
